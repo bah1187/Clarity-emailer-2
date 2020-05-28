@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en" xml:lang="en">
@@ -215,12 +213,14 @@
       max-width: 300px;
     }
 
+    .col__textblock {
+      vertical-align: top;
+    }
+
     .accent {
-      height: 5px;
-      width: 30px;
+
       display: block;
-      background: #4d8ed7;
-      margin-bottom: 20px;
+
     }
 
 
@@ -237,7 +237,8 @@
       font-size: 8px;
     }
 
-    .footer-link a, .footer-link p {
+    .footer-link a,
+    .footer-link p {
       font-size: 8px;
     }
 
@@ -248,7 +249,7 @@
     }
 
     table.threecol .col {
-      width: 26.33% !important;
+      width: 33.33% !important;
     }
 
     table.fourcol .col {
@@ -258,7 +259,15 @@
     .col {
       margin: 0;
       width: auto;
+      vertical-align: top;
+      padding: 0 18px;
     }
+
+    .col__text {
+      margin-top: 15px;
+    }
+
+
 
     .col br {
       display: block;
@@ -266,22 +275,49 @@
 
     .col__link {
       display: block;
-      font-size: 8px;
+      margin: 10px 0 0;
+      line-height: 1;
+    }
+
+    .col__link a {
+      font-size: 8px !important;
       color: #4d8ed7 !important;
       text-transform: uppercase;
-      margin: 10px 0 0;
+      text-decoration: none !important;
       letter-spacing: .5px;
-      text-decoration: none;
+    }
+
+    .col__imgblock-1 {
+      margin-top: 11px;
+    }
+
+    .col__imgblock-2 {
+      margin-top: 22px;
     }
 
     .col__img {
-      width: auto;
+      width: 151px;
+      display: block;
     }
 
 
 
-    .button-td{background-color:#4d8ed7;}
-    .button-a{color: #ffffff !important; border: 1px solid #4d8ed7; text-decoration: none; padding: 14px; display: inline-block; text-transform: uppercase; font-size: 10px; font-weight: bold;}
+
+    .button-td {
+      background-color: #4d8ed7;
+    }
+
+    .button-a {
+      color: #ffffff !important;
+      border: 1px solid #4d8ed7;
+      text-decoration: none;
+      padding: 14px;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: bold;
+      text-decoration: none !important;
+    }
 
     /* MOBILE STYLES WHERE SUPPORTED */
     @media screen and (max-width: 600px) {
@@ -314,8 +350,14 @@
         display: none;
       }
 
+      .col__imgblock {
+        width: 100%;
+
+      }
+
       .col__img {
         width: 100%;
+        display: block;
       }
 
     }
@@ -367,55 +409,128 @@
                     </tr>
                   </table>
 
+                </td>
+
+              </tr>
+
+
+              <!-- Section 2 -->
+
+              <table role="presentation" width="100%">
+                <tr>
+                  <td style="background:#eff3f9; padding:30px 20px;">
+
+
+                    <table class="threecol" role="presentation">
+                      <tr>
+                        <td class="col">  <!-- Column 1 -->
+
+                          <table>
+                            <tr>
+                              <td class="col__textblock">
+                                <img class="accent" src="https://tbcdn.talentbrew.com/company/3461/crm/accent.png" alt="">
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="col__textblock">
+                                <p class="col__text">Learn about our <br> hiring process,<br> from application<br> to offer letter.</p>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <table class="col__imgblock">
+                            <tr>
+                              <td>
+                                <img class="col__img" src="https://tbcdn.talentbrew.com/company/3461/crm/robot-hand.jpg" alt="logo">
+                                <p class="col__link">
+                                  <a href="https://link.goesnowhere.com">See our hiring process</a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+
+                        </td><!--End Column 1 -->
+
+
                   </td>
+                  <td class="col"><!-- Column 2 -->
+
+
+                    <table>
+                      <tr>
+                        <td class="col__textblock">
+                          <img class="accent" src="https://tbcdn.talentbrew.com/company/3461/crm/accent.png" alt="">
+
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="col__textblock">
+                          <p class="col__text">Read about our history,<br> leadership team, and<br> the inspiring work we <br>do each day.</p>
+                        </td>
+                      </tr>
+
+                    </table>
+
+                    <table class="col__imgblock-1">
+                      <tr>
+                        <td>
+                          <img class="col__img" src="https://tbcdn.talentbrew.com/company/3461/crm/award.jpg" alt="logo">
+                          <p class="col__link">
+                            <a href="https://link.goesnowhere.com">Read About Us</a>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+
+                  </td><!-- End Column 2 -->
+
+
+
+                  <td class="col"><!-- Column 3 -->
+
+                    <table>
+                      <tr>
+                        <td class="col__textblock">
+                          <img class="accent" src="https://tbcdn.talentbrew.com/company/3461/crm/accent.png" alt="">
+
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="col__textblock">
+                          <p class="col__text">Explore our state-of-art<br> office located in the<br> heart of NYC.</p>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table class="col__imgblock-2">
+                      <tr>
+                        <td>
+                          <img class="col__img" src="https://tbcdn.talentbrew.com/company/3461/crm/brooklyn.png" alt="logo">
+                          <p class="col__link">
+                            <a href="https://link.goesnowhere.com">EXPLORE OUR HEADQUARTERS</a>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+
+                  </td><!-- End Column 3 -->
+
 
                 </tr>
+              </table>
 
 
-                  <!-- Section 2 -->
-
-                  <table role="presentation" width="100%">
-                    <tr>
-                      <td style="background:#eff3f9; padding:30px 20px;">
+              <!-- End Section 2 -->
 
 
-                        <table class="threecol" role="presentation">
-                          <tr>
-                              <td class="col">
-                                <span class="accent"></span>
-                                <p class="col__text" style="margin-bottom: 0;">Learn about our <br> hiring process, <br>from application <br>to offer letter.</p>
-                                <img class="col__img"  src="https://tbcdn.talentbrew.com/company/3461/crm/robot-hand.jpg" alt="logo">
-                                <a href="https://link.goesnowhere.com" class="col__link">See our hiring process</a>
-                              </td>
-                              <td class="col">
-                                <span class="accent"></span>
-                                <p class="col__text" style="margin-bottom: 12px;">Read about our history,<br> leadership team, and<br> the inspiring work we<br> do each day. </p>
-                                <img class="col__img" src="https://tbcdn.talentbrew.com/company/3461/crm/award.jpg" alt="logo">
-                                <a href="https://link.goesnowhere.com" class="col__link">Read About Us</a>
-                              </td>
-                              <td class="col">
-                                <span class="accent"></span>
-                                <p class="col__text" style="margin-bottom: 23px;">Explore our state-of-art<br> office located in the<br> heart of NYC.</p>
-                                <img class="col__img" src="https://tbcdn.talentbrew.com/company/3461/crm/brooklyn.png" alt="logo">
-                                <a href="https://link.goesnowhere.com" class="col__link">Explore Our Headquarters</a>
-                              </td>
+              <!-- Stand alone button -->
 
-                          </tr>
-                      </table>
+              <tr>
 
-                      </td>
-                    </tr>
-                  </table>
-                  <!-- End Section 2 -->
-
-
-
-
-                  <!-- Stand alone button -->
-
-                  <tr>
-
-                 <td align="center" style="padding: 10px;">
+                <td align="center" style="padding: 10px;">
                   <table class="button-table" style="margin: 20px auto 20px;">
                     <tr>
                       <td align="center" class="button-td">
@@ -482,22 +597,22 @@
                 </td>
               </tr>
 
-               <tr>
-                  <td style="text-align: center; font-size: 8px;">
-                      <!-- Start of unsubscibe section -->
-                      <div>
-                          <div>
-                              <table name="tblunsubscibelink" style="width: 100%; text-align: center;">
-                                  <tbody>
-                                      <tr>
-                                          <td class="footer-link">[[UNSUBSCRIBE]]</td>
-                                      </tr>
-                                  </tbody>
-                              </table>
-                          </div>
-                      </div>
-                      <!-- End of unsubscibe section -->
-                  </td>
+              <tr>
+                <td style="text-align: center; font-size: 8px;">
+                  <!-- Start of unsubscibe section -->
+                  <div>
+                    <div>
+                      <table name="tblunsubscibelink" style="width: 100%; text-align: center;">
+                        <tbody>
+                          <tr>
+                            <td class="footer-link">[[UNSUBSCRIBE]]</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- End of unsubscibe section -->
+                </td>
               </tr>
             </table>
             <!-- end of footer  -->
